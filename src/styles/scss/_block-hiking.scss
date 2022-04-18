@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'open-sans-extrabold';
+    src: url(../fonts/open_sans/static/OpenSans/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'open-sans-italic-bold';
+    src: url(../fonts/open_sans/static/OpenSans/OpenSans-BoldItalic.ttf);
+}
+@font-face {
+    font-family: 'open-sans-italic';
+    src: url(../fonts/open_sans/static/OpenSans/OpenSans-Italic.ttf);
+}
+.block-hiking{
+    // border: 2px solid red;
+    position: relative;
+    background-image: url('../images/hiking/hiking.png');
+    background-repeat: no-repeat;
+    border: 0.1px solid transparent;
+    background-size: 100% auto;
+}
+.block-hiking__border-top{
+    position: absolute;
+    width: 100%;
+    img{
+        width: 100%;
+        max-height: 100px;
+    }
+}
+.block-hiking__background{
+    margin: 12% 5%;
+    max-width: 500px;
+}
+.block-hiking__text{
+    max-width: 400px;
+}
+.block-hiking__title{
+    font-family: 'open-sans-extrabold';
+    font-size: 4rem;
+    color: #deb37e;
+    line-height: 5rem;
+    text-transform: uppercase;
+}
+.block-hiking__sup-title{
+    margin: 5% 0;
+    font-family: 'open-sans-italic-bold';
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #54524f;
+}
+.block-hiking__learn-more{
+    margin: 10% 0;
+    button{
+        width: 160px;
+        height: 40px;
+        border: none;
+        background: white;
+        color: #776c64;
+        border-radius: 20px;
+        font-family: 'open-sans-extrabold';
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+}
+.block-hiking__main-text{
+    font-family: 'open-sans-italic';
+    color: #616060;
+    line-height: 1.2rem;
+}
+@media(max-width:700px){
+    .block-hiking__background{
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .block-hiking__text{
+        max-width: 90%;
+        max-width: 600px;
+        margin: 80% 0 10% ;
+        text-align: center;
+    }
+}

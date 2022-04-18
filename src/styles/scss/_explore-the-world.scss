@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'open-sans-extrabold-italic';
+    src: url(../fonts/open_sans/static/OpenSans/OpenSans-ExtraBoldItalic.ttf);
+}
+.explore-the-world{
+    position: relative;
+    background-image: url(../images/explore-the-world/bacground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.1px solid transparent;
+}
+.explore-the-world__border-top{
+    position: absolute;
+    transform: rotate(180deg);
+    width: 100%;
+    top: -5%;
+    img{
+        width: 100%;
+    }
+}
+.exsplore-the-world__title{
+    text-transform: uppercase;
+    text-align: right;
+    margin: 30% 10% 40% 50%;
+    font-size: 3rem;
+    font-family: 'open-sans-extrabold-italic';
+    color: #54524f;
+    p{
+        color: #deb37e;
+    }
+}
+.explore-the-world__border-bottom{
+    position: absolute;
+    bottom: -5%;
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+@media(max-width:700px){
+    .explore-the-world{
+        padding: 30% 0;
+        position: relative;
+    }
+    .exsplore-the-world__title{
+      position: absolute;
+      font-size: 2.5rem;
+      margin: 0;
+      right: 0;
+      top: 20%;
+    }
+    .explore-the-world__border-bottom{
+        bottom: -20%;
+    }
+}
+@media(max-width:500px){
+    .exsplore-the-world__title{
+       text-align: center;
+       font-size: 1.5rem;
+       width: 100%;
+      }
+}

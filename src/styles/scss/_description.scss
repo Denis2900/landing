@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'open-sans-bold';
+    src: url(../fonts/open_sans/static/OpenSans/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'open-sans-semibold';
+    src: url(../fonts/open_sans/static/OpenSans/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'open-sans';
+    src: url(../fonts/open_sans/static/OpenSans//OpenSans-Regular.ttf);
+}
+.description{
+    position: relative;
+}
+.description__container{
+    padding: 10% 15%;
+}
+.description__img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    img{
+        max-width: 100%;
+    }
+}
+.description__section-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.column{
+    max-width: 30%;
+}
+.column__title{
+    font-size: 2rem;
+    font-family: 'open-sans-bold';
+    color: #deb37e;
+}
+.column__text{
+    margin: 10% 0;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-family: 'open-sans';
+    color: #333d42;
+}
+.footer-text{
+    margin: 25% 0 0 0;
+    text-align: center;
+}
+.footer-text__main-text{
+    font-family: 'open-sans-semibold';
+    padding: 0 20%;
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+}
+.footer-text-end{
+    font-size: 1.2rem;
+    font-family: 'open-sans-bold';
+    margin: 5% 0;
+}
+@media(max-width:700px){
+    .description__section-text{
+        display: block;
+    }
+    .column{
+        max-width: 50%;
+    }
+}
+@media(max-width:500px){
+    .description__section-text{
+        display: block;
+    }
+    .column{
+        max-width: 100%;
+    }
+    .footer-text__main-text{
+        padding: 0;
+    }
+}
